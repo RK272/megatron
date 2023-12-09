@@ -6,7 +6,7 @@ class DistilBERT_Model:
 
     def model_pred(self,message):
         print("loading model")
-        reloaded_predictor = ktrain.load_predictor('model/distilbert_model_40Epochs')
+        reloaded_predictor = ktrain.load_predictor()
         print("predicting..")
 
         result=reloaded_predictor.predict(message)
